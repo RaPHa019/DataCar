@@ -1,7 +1,7 @@
 # DataCar
 Aplicação em React que consome uma api de carros.
 
-## Desenvolvimento
+# Desenvolvimento
 
 Nesta aplicação, foi utilizada as seguintes ferramentas e bibliotecas:
 
@@ -11,9 +11,9 @@ Nesta aplicação, foi utilizada as seguintes ferramentas e bibliotecas:
 - React-dom
 - Axios
 
-## Instalação e execução do projeto
+# Instalação e execução do projeto
 
-###Instalação
+<h3>Instalação</h3>
 
 O primeiro passo é clonar o repositório, com o seguinte comando :
 ```
@@ -28,7 +28,7 @@ O segundo passo é navegar até a pasta do projeto clocado e executar o comando 
 $ npx install ou yarn install
 ```
 
-###Execução
+<h3>Execução</h3>
 
 Ainda dentro da pasta do projeto é só executar o seguinte comando para executar o aplicativo e caso não abra a página automáticamente é só acessar o endereço [http://localhost:3000/](http://localhost:3000/) :
 
