@@ -1,0 +1,38 @@
+#page-edit-car{
+    width: 100vw;
+    height: 100vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #edit-car-form{
+    width: 80%;
+    margin-top: 25px;
+    padding-top: 80px;
+    height: 85%;
+    background-color: #fff;
+    
+  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  #edit-car-form button {
+    background-color: rgb(252, 6, 6);
+    color: #fff;
+    border-radius: 8px
+  }
+  
+  
+  
+  @media (min-width: 700px) {
+      #edit-car-form form button {
+        width: 280px;
+        height: 40px;
+        margin-top: 20px;
+      }
+    }

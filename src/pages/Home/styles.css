@@ -1,0 +1,204 @@
+/* Pagina Home */
+#page-home {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-content {
+  height: 90%;
+  margin-top: 150px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Área de Título */
+#home-content .title {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#home-content .title h1 {
+  font-size: 3rem;
+  
+}
+
+/* Cards dos carros */
+#home-content .cars {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+}
+
+#home-content .cars .car-item {
+  max-width: 30rem;
+  max-height: 25rem;
+  transition: 200ms;  
+  border: 1px solid #c5c5c5;
+  margin-bottom: 30px;
+  transition: 200ms;
+}
+
+#home-content .cars .car-item:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+#home-content .cars .car-item .car-item-button {
+  background-color: rgb(253, 253, 255);
+  width: 30rem;
+  height: 25rem;  
+  text-decoration: none;  
+  color: #fff;
+  box-shadow: 1px rgba(0, 0, 0, 0.4);
+  transition: 200ms;
+  font-size: 1.8rem;
+}
+
+
+#home-content .cars .car-item .details {
+  text-align: left;
+  padding: 5px 12px;
+}
+
+#home-content .cars .car-item .details .car-name {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+  color: #000;
+}
+
+#home-content .cars .car-item .details .car-detail {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+  color: #999;
+}
+
+#home-content .cars .car-item .details .car-price {
+  margin: 30px 0 5px;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 900;
+  color: #666;
+}
+
+#home-content .cars .car-item .details .car-age {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #999;
+}
+
+/* Área de botões */
+#home-content .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#home-content .button a {
+  background-color: rgb(252, 5, 5);
+  width: 250px;
+  height: 40px;
+  border-radius: 6px;
+  text-decoration: none;
+  padding-top: 10px;
+  color: #fff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 200ms;
+  font-size: 1.8rem;
+}
+
+#home-content .button a:hover {
+  background-color: rgba(225, 65, 65, 0.9);
+}
+
+.modal-page {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  
+}
+
+.modal-page section {
+  margin: 20px 0 40px;
+}
+
+.modal-page section h1 {
+  font-size: 5rem;
+  line-height: 6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.modal-page section p {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 2rem;
+}
+
+.modal-page p {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 2rem;
+  margin-top: 10px;
+}
+
+.modal-page h2 {
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 2rem;
+  margin-top: 20px;
+}
+
+
+
+.div-option-buttons button {
+  width: 280px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: rgb(250, 8, 8);
+  border-radius: 6px;
+  color: #fff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  justify-content: space-between;
+  position: relative;
+  align-items: baseline;
+}
+
+/* Responsividade */
+@media (min-width: 700px) {
+  #home-content .cars {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #home-content .cars .car-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  #home-content .button a {
+    width: 300px;
+    height: 50px;
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #home-content .cars {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1300px) {
+  #home-content .cars {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
